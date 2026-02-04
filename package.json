@@ -1,0 +1,7 @@
+{
+  "name": "baitaptuan2",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  }
+}

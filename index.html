@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Manager</title>
+  <script src="main.js"></script>
+</head>
+<body onload="loadPosts()">
+
+<h2>POSTS</h2>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Views</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="postBody"></tbody>
+</table>
+
+<h3>Add / Edit Post</h3>
+<input type="hidden" id="id_txt">
+<input type="text" id="title_txt" placeholder="Title">
+<input type="number" id="view_txt" placeholder="Views">
+<button onclick="savePost()">Save</button>
+
+<hr>
+
+<h2>COMMENTS</h2>
+<input type="text" id="comment_postId" placeholder="Post ID">
+<input type="text" id="comment_content" placeholder="Comment">
+<button onclick="addComment()">Add Comment</button>
+
+<ul id="commentList"></ul>
+
+</body>
+</html>
